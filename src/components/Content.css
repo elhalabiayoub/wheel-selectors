@@ -1,0 +1,20 @@
+.content {
+	height: 300px;
+	width: 100%;
+	height: fit-content;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 25px;
+	color: #ffffff99;
+	margin: -10px 0 40px 0px;
+}
+
+.content__cssCode {
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 1px;
+	padding: 0 2px;
+	color: white;
+	cursor: pointer;
+	text-decoration-line: underline;
+	font-family: "Source Code Pro", monospace;
+}

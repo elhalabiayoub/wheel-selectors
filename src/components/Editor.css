@@ -1,0 +1,99 @@
+.editor {
+	background-color: rgb(204, 201, 201);
+	height: fit-content;
+	margin-bottom: 100px;
+	margin-top: 10px;
+	display: flex;
+	width: 100%;
+}
+.editor__roowNumber {
+	background-color: gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	align-items: center;
+	width: 40px;
+	padding: 16px 0;
+}
+
+.editor__roowNumber > span {
+	margin-bottom: 1.5px;
+	font-weight: bold;
+}
+
+.editor__content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 95%;
+}
+
+.editor__content > textarea {
+	width: fit-content;
+	height: fit-content;
+	min-height: fit-content;
+	resize: none;
+	border: none;
+	margin: 16px 1px 0px 10px;
+	overflow-y: hidden;
+	overflow-x: auto;
+	font-size: 17px;
+	font-weight: 700;
+}
+.editor__content > textarea:focus {
+	outline: none;
+}
+.editor__cssCode {
+	margin-left: 7px;
+	width: fit-content;
+	position: relative;
+}
+
+.editor__content pre {
+	word-break: break-all;
+	word-wrap: break-word;
+	font-size: 18px;
+	color: rgba(128, 128, 128, 0.6);
+	font-weight: bolder;
+}
+
+.editor__button {
+	display: flex;
+	align-items: center;
+	height: 80px;
+	width: 100%;
+}
+.editor__button > button {
+	margin: 0px 15px 0px auto;
+	color: white;
+	width: 30%;
+	height: 50px;
+	background-color: #ef233c;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	animation: button 0.8s infinite linear;
+}
+.editor__button > button:focus {
+	outline: none;
+}
+.editor__button > button:hover {
+	background-color: #b9051a;
+}
+@keyframes button {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.03);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.editor__button > button:disabled {
+	background-color: #ef233b85;
+	animation: unset;
+}
